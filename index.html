@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GPT Interface</h1>
+    <textarea id="inputText" placeholder="Digite sua consulta aqui..."></textarea>
+    <button onclick="generateResponse()">Gerar Resposta</button>
+    <div id="output"></div>
+
+    <script>
+        function generateResponse() {
+            // Obtenha o texto de entrada
+            var inputText = document.getElementById('inputText').value;
+
+            // Lógica para chamar a API do GPT e obter a resposta
+            // Substitua a linha abaixo com a chamada real da API do GPT usando sua chave API
+
+            var fakeApiResponse = "Resposta do GPT: Isso é uma resposta de exemplo.";
+
+            // Exiba a resposta na interface
+            document.getElementById('output').innerText = fakeApiResponse;
+        }
+    </script>
+</body>
+</html>
