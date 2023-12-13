@@ -68,7 +68,7 @@ if uploaded_file is not None:
 
 # Initialize OpenAI assistant
 if "assistant" not in st.session_state:
-    openai.api_key = "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"
+    openai.api_key = st.secrets["OPENAI_API_KEY"]
     # Load the previously created assistant
     st.session_state.assistant = openai.beta.assistants.retrieve("asst_r9lhdoCrm0P5mmxV01RM18IB")
 
